@@ -19,7 +19,7 @@ class Logstate extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   child: Text(
                     'Devops Tools',
                     style: TextStyle(
@@ -35,7 +35,7 @@ class Logstate extends StatelessWidget {
                   height: 40,
                   width: 200,
                   padding: EdgeInsets.fromLTRB(80, 10, 80, 10),
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   color: Colors.blue,
                   child: Text('achref'),
                 ),
@@ -43,17 +43,17 @@ class Logstate extends StatelessWidget {
                   height: 40,
                   width: 200,
                   padding: EdgeInsets.fromLTRB(80, 10, 80, 10),
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   color: Colors.green,
-                  child: Text('achref'),
+                  child: Text('aya'),
                 ),
                 Container(
                   height: 40,
                   width: 200,
                   padding: EdgeInsets.fromLTRB(80, 10, 80, 10),
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   color: Colors.red,
-                  child: Text('achref'),
+                  child: Text('Hama'),
                 ),
                 CircleAvatar(
                   radius: 50,
