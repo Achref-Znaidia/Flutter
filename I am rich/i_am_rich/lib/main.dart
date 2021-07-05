@@ -82,7 +82,7 @@ class Logstate extends StatelessWidget {
                 Container(
                   height: 40,
                   width: 200,
-                  padding: EdgeInsets.fromLTRB(60, 10, 60, 10),
+                  padding: EdgeInsets.fromLTRB(80, 10, 80, 10),
                   margin: EdgeInsets.all(10),
                   color: Colors.blueGrey[900],
                   child: Text(
