@@ -14,13 +14,8 @@ class Logpage extends StatefulWidget {
 }
 
 class _LogpageState extends State<Logpage> {
-  void _handleGoogleSignIn() {
-    print('ok');
-  }
-
   @override
   Widget build(BuildContext context) {
-    var _controller;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
