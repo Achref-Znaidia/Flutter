@@ -24,13 +24,14 @@ class _LogpageState extends State<Logpage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.red[400],
         body: SafeArea(
           child: Expanded(
             child: Center(
               child: Column(
                 children: [
                   Expanded(
-                    flex: 1,
+                    flex: 8,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -66,53 +67,21 @@ class _LogpageState extends State<Logpage> {
                     ),
                   ),
                   Expanded(
-                    flex: 2,
+                    flex: 1,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: TextButton.icon(
-                            onPressed: _handleGoogleSignIn,
-                            icon: Icon(
-                              Icons.facebook_outlined,
-                              color: Colors.white,
-                            ),
-                            label: Text(
-                              'Sign in with google',
+                          padding: const EdgeInsets.all(2.0),
+                          child: SizedBox(
+                            child: Text(
+                              'Skip',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 12.0,
+                                fontSize: 14.0,
                                 //fontFamily: 'Arial Bold',
                               ),
-                            ),
-                            style: TextButton.styleFrom(
-                              backgroundColor: Colors.red,
-                              padding: EdgeInsets.fromLTRB(10, 20, 10, 20),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: TextButton.icon(
-                            onPressed: _handleGoogleSignIn,
-                            icon: Icon(
-                              Icons.facebook_outlined,
-                              color: Colors.white,
-                            ),
-                            label: Text(
-                              'Sign in with facebook',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12.0,
-                                //fontFamily: 'Arial Bold',
-                              ),
-                            ),
-                            style: TextButton.styleFrom(
-                              backgroundColor: Colors.blue,
-                              padding: EdgeInsets.fromLTRB(10, 20, 10, 20),
                             ),
                           ),
                         ),
@@ -120,20 +89,48 @@ class _LogpageState extends State<Logpage> {
                     ),
                   ),
                   Expanded(
-                    flex: 4,
+                    flex: 1,
                     child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                          child: TextField(
-                        controller: _controller,
-                        decoration: InputDecoration(
-                          hintText: "UserName",
-                          suffixIcon: IconButton(
-                            onPressed: () => _controller.clear,
-                            icon: Icon(Icons.clear),
-                          ),
+                      padding: const EdgeInsets.fromLTRB(10.0, 2.0, 10.0, 2.0),
+                      child: Card(
+                        color: Colors.red[50],
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Expanded(
+                              child: TextButton(
+                                style: TextButton.styleFrom(
+                                  backgroundColor: Colors.red[50],
+                                ),
+                                onPressed: () {},
+                                child: Text(
+                                  'Sign in',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: TextButton(
+                                style: TextButton.styleFrom(
+                                  backgroundColor: Colors.amber,
+                                  shape: const BeveledRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(5))),
+                                ),
+                                onPressed: () {},
+                                child: Text(
+                                  'Register',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      )),
+                      ),
                     ),
                   ),
                 ],
