@@ -46,12 +46,20 @@ class _LogpageState extends State<Logpage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Image(
+                            image: AssetImage(
+                              'Assets/Logo.png',
+                            ),
+                          ),
+                        ),
+                        Padding(
                           padding: const EdgeInsets.all(2.0),
                           child: SizedBox(
                             child: Text(
                               'Sell your staff.',
                               style: TextStyle(
-                                color: _white,
+                                color: _black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 14.0,
                                 //fontFamily: 'Arial Bold',
@@ -66,7 +74,7 @@ class _LogpageState extends State<Logpage> {
                               'Create a free account and get your market space.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: _redclaire,
+                                color: _black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12.0,
                                 //fontFamily: 'Arial Bold',
