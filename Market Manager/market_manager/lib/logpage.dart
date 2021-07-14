@@ -2,12 +2,7 @@ import 'dart:ui';
 import 'signinpage.dart';
 import 'registerpage.dart';
 import 'package:flutter/material.dart';
-
-//const Color _red = Color.fromARGB(255, 255, 56, 83);
-//const Color _redclaire = Color.fromARGB(255, 255, 184, 197);
-const Color _amber = Colors.amber;
-const Color _white = Colors.white;
-const Color _black = Colors.black;
+import 'package:market_manager/constants.dart';
 
 class Logpage extends StatefulWidget {
   const Logpage({Key? key}) : super(key: key);
@@ -61,7 +56,7 @@ class _LogpageState extends State<Logpage> {
                                   ),
                                   Icon(
                                     Icons.arrow_right_rounded,
-                                    color: _white,
+                                    color: white,
                                   )
                                 ],
                               ),
@@ -91,7 +86,7 @@ class _LogpageState extends State<Logpage> {
                             child: Text(
                               'Sell your staff.',
                               style: TextStyle(
-                                color: _black,
+                                color: black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 14.0,
                                 //fontFamily: 'Arial Bold',
@@ -104,7 +99,7 @@ class _LogpageState extends State<Logpage> {
                               'Create a free account and get your market space.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: _black,
+                                color: black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12.0,
                                 //fontFamily: 'OtomanopeeOne-Regular',
@@ -128,9 +123,9 @@ class _LogpageState extends State<Logpage> {
                                 width: 125,
                                 height: 60,
                                 decoration: BoxDecoration(
-                                  color: _white,
+                                  color: white,
                                   border: Border.all(
-                                    color: _white,
+                                    color: white,
                                   ),
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(20),
@@ -147,7 +142,7 @@ class _LogpageState extends State<Logpage> {
                                   child: Text(
                                     'Register',
                                     style: TextStyle(
-                                      color: _black,
+                                      color: black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14.0,
                                       //fontFamily: 'Arial Bold',
@@ -163,9 +158,9 @@ class _LogpageState extends State<Logpage> {
                                 width: 120,
                                 height: 60,
                                 decoration: BoxDecoration(
-                                  color: _amber,
+                                  color: amber,
                                   border: Border.all(
-                                    color: _amber,
+                                    color: amber,
                                   ),
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(20),
@@ -182,7 +177,7 @@ class _LogpageState extends State<Logpage> {
                                   child: Text(
                                     'Sign in',
                                     style: TextStyle(
-                                      color: _black,
+                                      color: black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14.0,
                                       //fontFamily: 'Arial Bold',
