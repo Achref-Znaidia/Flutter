@@ -1,5 +1,5 @@
 import 'dart:ui';
-
+import 'constants.dart';
 import 'package:flutter/material.dart';
 
 class Signin extends StatefulWidget {
@@ -48,9 +48,11 @@ class _SigninState extends State<Signin> {
                 ),
               ),
             ),
+            Expanded(child: Column()),
             Expanded(
               child: Container(
-                height: 35,
+                height: 20,
+                margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   color: Colors.white,
@@ -70,6 +72,56 @@ class _SigninState extends State<Signin> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.amber,
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(2.0),
+                child: Text(
+                  'Sell your staff.',
+                  style: TextStyle(
+                    color: black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14.0,
+                    //fontFamily: 'Arial Bold',
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: Positioned(
+                bottom: 8,
+                right: 8,
+                child: Container(
+                  width: 120,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    color: amber,
+                    border: Border.all(
+                      color: amber,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(20),
+                    ),
+                  ),
+                  child: TextButton(
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => Signin()),
+                      // );
+                    },
+                    child: Text(
+                      'Sign in',
+                      style: TextStyle(
+                        color: black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
+                        //fontFamily: 'Arial Bold',
+                      ),
+                    ),
                   ),
                 ),
               ),
