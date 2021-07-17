@@ -30,8 +30,8 @@ class _LogpageState extends State<Logpage> {
         builder: (context) => Scaffold(
           backgroundColor: Colors.red[400],
           body: SafeArea(
-            child: Expanded(
-              child: Center(
+            child: Center(
+              child: Expanded(
                 child: Column(
                   children: [
                     Expanded(
