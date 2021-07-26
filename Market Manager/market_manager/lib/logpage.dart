@@ -154,33 +154,36 @@ class _LogpageState extends State<Logpage> {
                             Positioned(
                               bottom: 8,
                               right: 8,
-                              child: Container(
-                                width: 120,
-                                height: 60,
-                                decoration: BoxDecoration(
-                                  color: amber,
-                                  border: Border.all(
+                              child: Hero(
+                                tag: 'Sign',
+                                child: Container(
+                                  width: 120,
+                                  height: 60,
+                                  decoration: BoxDecoration(
                                     color: amber,
+                                    border: Border.all(
+                                      color: amber,
+                                    ),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(20),
+                                    ),
                                   ),
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(20),
-                                  ),
-                                ),
-                                child: TextButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => Signin()),
-                                    );
-                                  },
-                                  child: Text(
-                                    'Sign in',
-                                    style: TextStyle(
-                                      color: black,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14.0,
-                                      //fontFamily: 'Arial Bold',
+                                  child: TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => Signin()),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Sign in',
+                                      style: TextStyle(
+                                        color: black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14.0,
+                                        //fontFamily: 'Arial Bold',
+                                      ),
                                     ),
                                   ),
                                 ),
