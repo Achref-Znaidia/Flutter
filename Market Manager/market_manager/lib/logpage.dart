@@ -86,7 +86,7 @@ class _LogpageState extends State<Logpage> {
                             child: Text(
                               'Sell your staff.',
                               style: TextStyle(
-                                color: black,
+                                color: white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 14.0,
                                 //fontFamily: 'Arial Bold',
@@ -99,7 +99,7 @@ class _LogpageState extends State<Logpage> {
                               'Create a free account and get your market space.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: black,
+                                color: white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12.0,
                                 //fontFamily: 'OtomanopeeOne-Regular',

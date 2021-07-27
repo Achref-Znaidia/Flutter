@@ -12,6 +12,8 @@ class Signin extends StatefulWidget {
 class _SigninState extends State<Signin> {
   final usermail = TextEditingController();
   final password = TextEditingController();
+  String user = '';
+  String pass = '';
   bool _passwordVisible = false;
 
   // @override
@@ -99,7 +101,11 @@ class _SigninState extends State<Signin> {
                     ),
                     child: Center(
                       child: TextFormField(
+                        keyboardType: TextInputType.emailAddress,
                         controller: usermail,
+                        onChanged: (value) {
+                          user = value;
+                        },
                         decoration: InputDecoration(
                           // filled: true,
                           // fillColor: redclaire,
@@ -141,6 +147,15 @@ class _SigninState extends State<Signin> {
                     ),
                     child: Center(
                       child: TextFormField(
+                        // validator: (pass) {
+                        //   if (pass == null) {
+                        //     return 'Please make inputs';
+                        //   }
+                        //   return null;
+                        // },
+                        onChanged: (value) {
+                          pass = value;
+                        },
                         controller: password,
                         obscureText: !_passwordVisible,
                         decoration: InputDecoration(
@@ -188,7 +203,7 @@ class _SigninState extends State<Signin> {
                   child: Padding(
                     padding: const EdgeInsets.all(2.0),
                     child: Text(
-                      'Don\'t have an account?Register',
+                      'Don\'t have an account? Register',
                       style: TextStyle(
                         color: white,
                         fontWeight: FontWeight.bold,
@@ -226,6 +241,7 @@ class _SigninState extends State<Signin> {
                               //   context,
                               //   MaterialPageRoute(builder: (context) => Signin()),
                               // );
+                              print(user + pass);
                             },
                             child: Text(
                               'Sign in',
