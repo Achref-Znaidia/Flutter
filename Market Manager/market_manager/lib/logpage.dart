@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:market_manager/constants.dart';
 
 class Logpage extends StatefulWidget {
-  const Logpage({Key? key}) : super(key: key);
+  //const Logpage({Key? key}) : super(key: key);
 
   @override
   _LogpageState createState() => _LogpageState();
@@ -119,33 +119,36 @@ class _LogpageState extends State<Logpage> {
                             Positioned(
                               bottom: 8,
                               left: 8,
-                              child: Container(
-                                width: 125,
-                                height: 60,
-                                decoration: BoxDecoration(
-                                  color: white,
-                                  border: Border.all(
+                              child: Hero(
+                                tag: 'register',
+                                child: Container(
+                                  width: 125,
+                                  height: 60,
+                                  decoration: BoxDecoration(
                                     color: white,
+                                    border: Border.all(
+                                      color: white,
+                                    ),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(20),
+                                    ),
                                   ),
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(20),
-                                  ),
-                                ),
-                                child: TextButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => Register()),
-                                    );
-                                  },
-                                  child: Text(
-                                    'Register',
-                                    style: TextStyle(
-                                      color: black,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14.0,
-                                      //fontFamily: 'Arial Bold',
+                                  child: TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => Register()),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Register',
+                                      style: TextStyle(
+                                        color: black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14.0,
+                                        //fontFamily: 'Arial Bold',
+                                      ),
                                     ),
                                   ),
                                 ),

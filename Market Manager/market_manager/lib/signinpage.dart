@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Signin extends StatefulWidget {
-  const Signin({Key? key}) : super(key: key);
+  //const Signin({Key? key}) : super(key: key);
 
   @override
   _SigninState createState() => _SigninState();
@@ -209,7 +209,7 @@ class _SigninState extends State<Signin> {
                   child: Padding(
                     padding: const EdgeInsets.all(2.0),
                     child: Text(
-                      'Don\'t have an account? Register',
+                      'Don\'t have an account ? back to register',
                       style: TextStyle(
                         color: white,
                         fontWeight: FontWeight.bold,
