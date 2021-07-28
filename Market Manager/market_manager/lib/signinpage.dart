@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Signin extends StatefulWidget {
-  //const Signin({Key? key}) : super(key: key);
+  const Signin({Key? key}) : super(key: key);
 
   @override
   _SigninState createState() => _SigninState();

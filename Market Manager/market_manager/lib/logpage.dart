@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:market_manager/constants.dart';
 
 class Logpage extends StatefulWidget {
-  //const Logpage({Key? key}) : super(key: key);
+  const Logpage({Key? key}) : super(key: key);
 
   @override
   _LogpageState createState() => _LogpageState();
