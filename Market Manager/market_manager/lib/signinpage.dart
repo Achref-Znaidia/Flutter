@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'constants.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Signin extends StatefulWidget {
   const Signin({Key? key}) : super(key: key);
@@ -72,14 +73,19 @@ class _SigninState extends State<Signin> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(2.0),
-                        child: Text(
-                          'Let\'s sign you in.',
-                          textAlign: TextAlign.left,
+                        child: DefaultTextStyle(
                           style: TextStyle(
                             color: white,
                             fontWeight: FontWeight.bold,
                             fontSize: 24.0,
                             //fontFamily: 'Arial Bold',
+                          ),
+                          child: AnimatedTextKit(
+                            repeatForever: true,
+                            animatedTexts: [
+                              TypewriterAnimatedText('Let\'s sign you in')
+                            ],
+                            // textAlign: TextAlign.left,
                           ),
                         ),
                       ),
@@ -147,12 +153,12 @@ class _SigninState extends State<Signin> {
                     ),
                     child: Center(
                       child: TextFormField(
-                        // validator: (pass) {
-                        //   if (pass == null) {
-                        //     return 'Please make inputs';
-                        //   }
-                        //   return null;
-                        // },
+                        validator: (value) {
+                          if (value == null) {
+                            return 'Please make inputs';
+                          }
+                          return null;
+                        },
                         onChanged: (value) {
                           pass = value;
                         },
