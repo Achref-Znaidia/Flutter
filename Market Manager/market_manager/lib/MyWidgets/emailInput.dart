@@ -13,9 +13,9 @@ class EmailInput extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
-        color: Colors.red[300],
+        color: KColorRed,
         border: Border.all(
-          color: Color(0XFFEF9A9A),
+          color: KColorRedClaire,
           width: 1.0,
         ),
       ),
@@ -32,7 +32,7 @@ class EmailInput extends StatelessWidget {
             //     borderRadius: BorderRadius.all(Radius.circular(20))),
             hintText: 'Email',
             hintStyle: TextStyle(
-              color: Color(0XFFEF9A9A),
+              color: KColorRedClaire,
             ),
             border: InputBorder.none,
             focusedBorder: InputBorder.none,
@@ -40,12 +40,12 @@ class EmailInput extends StatelessWidget {
             disabledBorder: InputBorder.none,
             icon: Icon(
               Icons.mail_rounded,
-              color: Color(0XFFEF9A9A),
+              color: KColorRedClaire,
             ),
           ),
           style: TextStyle(
             fontSize: 16,
-            color: white,
+            color: kColorWhite,
           ),
         ),
       ),
