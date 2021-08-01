@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:market_manager/logpage.dart';
+import 'package:market_manager/MyScreens/logpage.dart';
 //import 'package:market_manager/main.dart';
 
 void main() {

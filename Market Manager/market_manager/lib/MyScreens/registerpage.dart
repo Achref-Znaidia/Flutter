@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import '../constants.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import '../MyWidgets/emailInput.dart';
+import '../MyWidgets/passInput.dart';
 
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
@@ -10,8 +12,8 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
-  final usermailregister = TextEditingController();
-
+  String user = '';
+  String pass = '';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,43 +70,17 @@ class _RegisterState extends State<Register> {
                 ),
               ),
               Expanded(
-                child: Container(
-                  height: 10,
-                  padding: EdgeInsets.all(10),
-                  margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                    color: Colors.red[300],
-                    border: Border.all(
-                      color: Color(0xFFEF9A9A),
-                      width: 1.0,
-                    ),
-                  ),
-                  child: Center(
-                    child: TextFormField(
-                      controller: usermailregister,
-                    ),
-                  ),
+                child: EmailInput(
+                  onChange: (value) {
+                    user = value;
+                  },
                 ),
               ),
               Expanded(
-                child: Container(
-                  height: 10,
-                  padding: EdgeInsets.all(10),
-                  margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                    color: Colors.red[300],
-                    border: Border.all(
-                      color: Color(0xFFEF9A9A),
-                      width: 1.0,
-                    ),
-                  ),
-                  child: Center(
-                      // child: TextFormField(
-                      //   controller: usermailregister,
-                      // ),
-                      ),
+                child: PassInput(
+                  onChange: (value) {
+                    pass = value;
+                  },
                 ),
               ),
               Expanded(
